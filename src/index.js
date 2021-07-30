@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import FunctionalComponentOne from './FunctionalComponent/FunctionalComponentOne';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <>
+      <App />
+      <FunctionalComponentOne />
+    </>
   </React.StrictMode>,
   document.getElementById('root')
 );
