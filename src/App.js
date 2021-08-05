@@ -1,28 +1,32 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useState } from 'react';
-import FunctionalComponentOne from './FunctionalComponent/FunctionalComponentOne';
+import ClickCounter from './HOC/ClickCounter';
+import HoverComponent from './HOC/HoverComponent';
+/* import FunctionalComponentOne from './FunctionalComponent/FunctionalComponentOne';
 import FunctionalComponent2 from './FunctionalComponent/FunctionalComponent2';
 import FunctionalComponent3 from './FunctionalComponent/FunctionalComponent3';
 import PureComponentClass from './PureComponents/PureComponentClass';
-import PureFunctionalComponent from './PureComponents/PureFunctionalComponent';
+import PureFunctionalComponent from './PureComponents/PureFunctionalComponent'; */
 
 function App() {
-  const [data, setData] = useState('John');
+  /* const [data, setData] = useState('John');
   const updateData = () => {
     setData("John Wick");
   }
   const resetData = () => {
     setData('John');
-  }
+  } */
   return (
     <>
       <div>App.js</div>
-      <FunctionalComponentOne />
+      {/* <FunctionalComponentOne />
       <FunctionalComponent2 />
       <FunctionalComponent3 data={{ name: data, updateNameBtnHandler: updateData, resetBtnHandler: resetData }} />
       <PureComponentClass />
-      <PureFunctionalComponent />
+      <PureFunctionalComponent /> */}
+      <ClickCounter name={`Dummy User`}/>
+      <HoverComponent name={`Dummy User`}/>
     </>
   );
 }
