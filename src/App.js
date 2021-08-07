@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useState } from 'react';
-import ClickCounterTwo from './RenderProps/ClickCounterTwo';
+import ComponentC from './ContextConcept/ComponentC';
+import { UserProvider } from './ContextConcept/userContext';
+/* import ClickCounterTwo from './RenderProps/ClickCounterTwo';
 import CounterComponent from './RenderProps/CounterComponent';
-import HoverComponentTwo from './RenderProps/HoverComponentTwo';
+import HoverComponentTwo from './RenderProps/HoverComponentTwo'; */
 /* import ClickCounter from './HOC/ClickCounter';
 import HoverComponent from './HOC/HoverComponent'; */
 /* import FunctionalComponentOne from './FunctionalComponent/FunctionalComponentOne';
@@ -34,14 +36,17 @@ function App() {
       {/* <CounterComponent
         render={(counter, increaseCounter) => <ClickCounterTwo counter={counter} increaseCounter={increaseCounter} />} />
       <CounterComponent render={(counter, increaseCounter) => <HoverComponentTwo counter={counter} increaseCounter={increaseCounter} />} /> */}
-      <CounterComponent>
+      {/* <CounterComponent>
         {(counter, increaseCounter) =>
           <ClickCounterTwo counter={counter} increaseCounter={increaseCounter} />
         }
       </CounterComponent>
       <CounterComponent>
         {(counter, increaseCounter) => <HoverComponentTwo counter={counter} increaseCounter={increaseCounter} />}
-      </CounterComponent>
+      </CounterComponent> */}
+      <UserProvider value={{ name: 'Apoorv', age: 31 }}>
+        <ComponentC />
+      </UserProvider>
     </>
   );
 }
