@@ -3,6 +3,9 @@
 import React, { useState } from 'react';
 import ComponentC from './ContextConcept/ComponentC';
 import { UserProvider } from './ContextConcept/userContext';
+import ParentHocComp from './HOC/ParentHocComp';
+import ParentComp from './InterviewQuestion/ParentComp';
+import FunctionParentComp from './Refs/FunctionParentComp';
 /* import ClickCounterTwo from './RenderProps/ClickCounterTwo';
 import CounterComponent from './RenderProps/CounterComponent';
 import HoverComponentTwo from './RenderProps/HoverComponentTwo'; */
@@ -13,6 +16,7 @@ import FunctionalComponent2 from './FunctionalComponent/FunctionalComponent2';
 import FunctionalComponent3 from './FunctionalComponent/FunctionalComponent3';
 import PureComponentClass from './PureComponents/PureComponentClass';
 import PureFunctionalComponent from './PureComponents/PureFunctionalComponent'; */
+import ParentRefComp from './Refs/ParentRefComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -44,9 +48,13 @@ function App() {
       <CounterComponent>
         {(counter, increaseCounter) => <HoverComponentTwo counter={counter} increaseCounter={increaseCounter} />}
       </CounterComponent> */}
-      <UserProvider value={{ name: 'Apoorv', age: 31 }}>
+      {/* <UserProvider value={{ name: 'Apoorv', age: 31 }}>
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <ParentComp /> */}
+      {/* <ParentRefComp /> */}
+      {/* <FunctionParentComp /> */}
+      <ParentHocComp />
     </>
   );
 }
