@@ -5,7 +5,7 @@ function PureFunctionalComponent() {
     const increaseCounter = () =>{
         setCounter(counter+1)
     }
-    console.log('in Parent Component')
+    
     return (
         <div>
             <CustomLabelComponent name={`Simple Counter App`} />
