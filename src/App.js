@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import ComponentC from './ContextConcept/ComponentC';
 import { UserProvider } from './ContextConcept/userContext';
+import Form from './FormHandling/Form';
 import ParentHocComp from './HOC/ParentHocComp';
 import ParentComp from './InterviewQuestion/ParentComp';
 import FunctionParentComp from './Refs/FunctionParentComp';
@@ -54,7 +55,8 @@ function App() {
       {/* <ParentComp /> */}
       {/* <ParentRefComp /> */}
       {/* <FunctionParentComp /> */}
-      <ParentHocComp />
+      {/* <ParentHocComp /> */}
+      <Form />
     </>
   );
 }
