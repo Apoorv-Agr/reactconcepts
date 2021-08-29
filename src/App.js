@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useState } from 'react';
+import LifeCycleA from './ComponentLifeCycle/LifeCycleA';
 import ComponentC from './ContextConcept/ComponentC';
 import { UserProvider } from './ContextConcept/userContext';
 import Form from './FormHandling/Form';
@@ -56,7 +57,8 @@ function App() {
       {/* <ParentRefComp /> */}
       {/* <FunctionParentComp /> */}
       {/* <ParentHocComp /> */}
-      <Form />
+      {/* <Form /> */}
+      <LifeCycleA />
     </>
   );
 }
