@@ -19,6 +19,7 @@ import FunctionalComponent3 from './FunctionalComponent/FunctionalComponent3';
 import PureComponentClass from './PureComponents/PureComponentClass';
 import PureFunctionalComponent from './PureComponents/PureFunctionalComponent'; */
 import ParentRefComp from './Refs/ParentRefComp';
+import ClassLifeCycle from './ClassComponentLifeCycleHooks/ClassLifeCycle';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -58,7 +59,8 @@ function App() {
       {/* <FunctionParentComp /> */}
       {/* <ParentHocComp /> */}
       {/* <Form /> */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
+      <ClassLifeCycle />
     </>
   );
 }
