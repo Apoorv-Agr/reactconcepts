@@ -1,13 +1,13 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useState } from 'react';
-import LifeCycleA from './ComponentLifeCycle/LifeCycleA';
+/* import LifeCycleA from './ComponentLifeCycle/LifeCycleA';
 import ComponentC from './ContextConcept/ComponentC';
-import { UserProvider } from './ContextConcept/userContext';
-import Form from './FormHandling/Form';
+import { UserProvider } from './ContextConcept/userContext'; */
+/* import Form from './FormHandling/Form';
 import ParentHocComp from './HOC/ParentHocComp';
 import ParentComp from './InterviewQuestion/ParentComp';
-import FunctionParentComp from './Refs/FunctionParentComp';
+import FunctionParentComp from './Refs/FunctionParentComp'; */
 /* import ClickCounterTwo from './RenderProps/ClickCounterTwo';
 import CounterComponent from './RenderProps/CounterComponent';
 import HoverComponentTwo from './RenderProps/HoverComponentTwo'; */
@@ -18,8 +18,11 @@ import FunctionalComponent2 from './FunctionalComponent/FunctionalComponent2';
 import FunctionalComponent3 from './FunctionalComponent/FunctionalComponent3';
 import PureComponentClass from './PureComponents/PureComponentClass';
 import PureFunctionalComponent from './PureComponents/PureFunctionalComponent'; */
-import ParentRefComp from './Refs/ParentRefComp';
-import ClassLifeCycle from './ClassComponentLifeCycleHooks/ClassLifeCycle';
+/* import ParentRefComp from './Refs/ParentRefComp'; */
+import ClassLifeCycleMounting from './ClassComponentLifeCycleHooks/ClassLifeCycleMounting';
+import ClassLifeCycleUpdating from './ClassComponentLifeCycleHooks/ClassLifeCycleUpdating';
+import ErrorGeneratingComponent from './ErrorBoundaries/ErrorGeneratingComponent';
+import ErrorHandler from './ErrorBoundaries/ErrorHandler';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -30,7 +33,7 @@ function App() {
     setData('John');
   } */
   return (
-    <>
+    <div style={{ margin: '0px auto', padding: '10px', textAlign: 'center' }}>
       <div>App.js</div>
       {/* <FunctionalComponentOne />
       <FunctionalComponent2 />
@@ -60,8 +63,23 @@ function App() {
       {/* <ParentHocComp /> */}
       {/* <Form /> */}
       {/* <LifeCycleA /> */}
-      <ClassLifeCycle />
-    </>
+      {/* <ClassLifeCycleMounting /> */}
+      {/* <ClassLifeCycleUpdating/> */}
+      {/* <ErrorHandler>
+        <ErrorGeneratingComponent number={4} />
+        <ErrorGeneratingComponent number={8} />
+        <ErrorGeneratingComponent number={"10"} />
+      </ErrorHandler> */}
+      <ErrorHandler>
+        <ErrorGeneratingComponent number={4} />
+      </ErrorHandler>
+      <ErrorHandler>
+        <ErrorGeneratingComponent number={8} />
+      </ErrorHandler>
+      <ErrorHandler>
+        <ErrorGeneratingComponent number={"10"} />
+      </ErrorHandler>
+    </div >
   );
 }
 

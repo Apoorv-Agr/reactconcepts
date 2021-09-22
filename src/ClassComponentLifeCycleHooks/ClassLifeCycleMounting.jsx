@@ -9,7 +9,7 @@
 
 import React, { Component } from "react";
 
-class ClassLifeCycle extends Component {
+class ClassLifeCycleMounting extends Component {
   constructor(props) {
     super(props);
 
@@ -28,8 +28,8 @@ class ClassLifeCycle extends Component {
 
   render() {
     console.log("3rd console in render");
-    return <div>ClassLifeCycle</div>;
+    return <div>Class LifeCycle Mounting</div>;
   }
 }
 
-export default ClassLifeCycle;
+export default ClassLifeCycleMounting;
