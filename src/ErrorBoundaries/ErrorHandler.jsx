@@ -22,11 +22,14 @@ class ErrorHandler extends Component {
   }
 
   static getDerivedStateFromError(error) {
-    console.log("error : ", error);
+    // console.log("error : ", error);
     return {
       hasError: true,
       errorMsg: error,
     };
+  }
+  componentDidCatch(error, info) {
+    console.log("error : ", error, " ,info : ", info);
   }
   render() {
     const { hasError } = this.state;
