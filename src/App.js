@@ -25,6 +25,10 @@ import ErrorGeneratingComponent from './ErrorBoundaries/ErrorGeneratingComponent
 import ErrorHandler from './ErrorBoundaries/ErrorHandler';
 import PreviousState from './PreviousStateHooks/PreviousState';
 import UseStateComponent from './useStateObject/UseStateComponent';
+import UseStateArrayComponent from './useStateArray/UseStateArrayComponent';
+import UseEffectHooksFlow from './useEffectHook/UseEffectHooksFlow';
+import UseEffectHooksFlowOnStateUpdate from './useEffectHook/useEffectHooksFlowOnStateUpdate';
+import ComponentDidMountUpdate from './ClassComponentLifeCycleHooks/ComponentDidMountUpdate';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -82,7 +86,11 @@ function App() {
         <ErrorGeneratingComponent number={"10"} />
       </ErrorHandler> */}
       {/* <PreviousState /> */}
-      <UseStateComponent />
+      {/* <UseStateComponent /> */}
+      {/* <UseStateArrayComponent /> */}
+      {/* <UseEffectHooksFlow /> */}
+      <UseEffectHooksFlowOnStateUpdate />
+      <ComponentDidMountUpdate />
     </div >
   );
 }
