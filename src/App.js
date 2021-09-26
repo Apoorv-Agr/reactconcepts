@@ -23,6 +23,8 @@ import ClassLifeCycleMounting from './ClassComponentLifeCycleHooks/ClassLifeCycl
 import ClassLifeCycleUpdating from './ClassComponentLifeCycleHooks/ClassLifeCycleUpdating';
 import ErrorGeneratingComponent from './ErrorBoundaries/ErrorGeneratingComponent';
 import ErrorHandler from './ErrorBoundaries/ErrorHandler';
+import PreviousState from './PreviousStateHooks/PreviousState';
+import UseStateComponent from './useStateObject/UseStateComponent';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -70,7 +72,7 @@ function App() {
         <ErrorGeneratingComponent number={8} />
         <ErrorGeneratingComponent number={"10"} />
       </ErrorHandler> */}
-      <ErrorHandler>
+      {/* <ErrorHandler>
         <ErrorGeneratingComponent number={4} />
       </ErrorHandler>
       <ErrorHandler>
@@ -78,7 +80,9 @@ function App() {
       </ErrorHandler>
       <ErrorHandler>
         <ErrorGeneratingComponent number={"10"} />
-      </ErrorHandler>
+      </ErrorHandler> */}
+      {/* <PreviousState /> */}
+      <UseStateComponent />
     </div >
   );
 }
