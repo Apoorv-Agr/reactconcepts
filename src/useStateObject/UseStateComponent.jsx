@@ -33,6 +33,7 @@ const UseStateComponent = () => {
         />
         <h2> Fist Name is {fullName.firstName}</h2>
         <h2> Last Name is {fullName.lastName}</h2>
+        <h2>{JSON.stringify(fullName)}</h2>
       </form>
     </div>
   );
