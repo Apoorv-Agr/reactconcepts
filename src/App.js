@@ -29,6 +29,10 @@ import UseStateArrayComponent from './useStateArray/UseStateArrayComponent';
 import UseEffectHooksFlow from './useEffectHook/UseEffectHooksFlow';
 import UseEffectHooksFlowOnStateUpdate from './useEffectHook/useEffectHooksFlowOnStateUpdate';
 import ComponentDidMountUpdate from './ClassComponentLifeCycleHooks/ComponentDidMountUpdate';
+import InputRefClassComp from './RefRevision/InputRefClassComp';
+import RefClassCompWay2 from './RefRevision/RefClassCompWay2';
+import RefClassParentComp from './RefRevision/RefClassParentComp';
+import RefForwardingParentComp from './RefRevision/RefForwardingParentComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -89,8 +93,12 @@ function App() {
       {/* <UseStateComponent /> */}
       {/* <UseStateArrayComponent /> */}
       {/* <UseEffectHooksFlow /> */}
-      <UseEffectHooksFlowOnStateUpdate />
-      <ComponentDidMountUpdate />
+      {/* <UseEffectHooksFlowOnStateUpdate />
+      <ComponentDidMountUpdate /> */}
+      {/* <InputRefClassComp /> */}
+      {/* <RefClassCompWay2 /> */}
+      {/* <RefClassParentComp /> */}
+      <RefForwardingParentComp />
     </div >
   );
 }
