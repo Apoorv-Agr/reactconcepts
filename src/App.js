@@ -39,6 +39,7 @@ import ContextMainComp from './ContextNew/ContextMainComp';
 import PrevStateComp from './FunctionalCompHooks/PrevStateComp';
 import HooksCleanUp from './FunctionalCompHooks/HooksCleanUp';
 import HooksCleanUpParentComp from './FunctionalCompHooks/HooksCleanUpParentComp';
+import TimerComp from './FunctionalCompHooks/TimerComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -110,7 +111,8 @@ function App() {
       {/* <ContextMainComp/> */}
       {/* <PrevStateComp/> */}
       {/* <HooksCleanUp /> */}
-      <HooksCleanUpParentComp />
+      {/* <HooksCleanUpParentComp /> */}
+      <TimerComp />
     </div >
   );
 }
