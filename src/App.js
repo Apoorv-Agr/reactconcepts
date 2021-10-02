@@ -33,6 +33,9 @@ import InputRefClassComp from './RefRevision/InputRefClassComp';
 import RefClassCompWay2 from './RefRevision/RefClassCompWay2';
 import RefClassParentComp from './RefRevision/RefClassParentComp';
 import RefForwardingParentComp from './RefRevision/RefForwardingParentComp';
+import MainComp from './RenderProps2/MainComp';
+import FinalComp from './RenderProps2/FinalComp';
+import ContextMainComp from './ContextNew/ContextMainComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -98,7 +101,10 @@ function App() {
       {/* <InputRefClassComp /> */}
       {/* <RefClassCompWay2 /> */}
       {/* <RefClassParentComp /> */}
-      <RefForwardingParentComp />
+      {/* <RefForwardingParentComp /> */}
+      {/* <MainComp /> */}
+      {/* <FinalComp/> */}
+      <ContextMainComp/>
     </div >
   );
 }
