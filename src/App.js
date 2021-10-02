@@ -36,6 +36,9 @@ import RefForwardingParentComp from './RefRevision/RefForwardingParentComp';
 import MainComp from './RenderProps2/MainComp';
 import FinalComp from './RenderProps2/FinalComp';
 import ContextMainComp from './ContextNew/ContextMainComp';
+import PrevStateComp from './FunctionalCompHooks/PrevStateComp';
+import HooksCleanUp from './FunctionalCompHooks/HooksCleanUp';
+import HooksCleanUpParentComp from './FunctionalCompHooks/HooksCleanUpParentComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -104,7 +107,10 @@ function App() {
       {/* <RefForwardingParentComp /> */}
       {/* <MainComp /> */}
       {/* <FinalComp/> */}
-      <ContextMainComp/>
+      {/* <ContextMainComp/> */}
+      {/* <PrevStateComp/> */}
+      {/* <HooksCleanUp /> */}
+      <HooksCleanUpParentComp />
     </div >
   );
 }
