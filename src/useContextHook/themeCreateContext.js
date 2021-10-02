@@ -9,3 +9,5 @@ const ThemeConsumer = ThemeContext.Consumer;
 
 
 export { ThemeProvider, ThemeConsumer };
+
+export default ThemeContext;

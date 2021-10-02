@@ -9,3 +9,5 @@ const LanguageContextConsumer = LanguageContext.Consumer;
 
 
 export { LanguageContextProvider, LanguageContextConsumer };
+
+export default LanguageContext;
