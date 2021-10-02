@@ -8,7 +8,9 @@ const HooksCleanUp = () => {
     setX(event.clientX);
     setY(event.clientY);
   };
-
+    /* 
+        Clean Up code for cancelling subscriptions, timers , removing event Handlers
+     */
   const effectCleanUps = () => {
     console.log("in Clean Up Post Component Unmount");
     window.removeEventListener("mousemove", logMouseMovements);
