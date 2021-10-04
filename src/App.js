@@ -44,6 +44,8 @@ import GrandParentComp from './useContextHook/GrandParentComp';
 import ParentCompOpt from './OptimizationTech/UseCallBackHook/ParentCompOpt';
 import UseRefComp from './useRefHooks/UseRefComp';
 import UseMemoComp from './UseMemoHook/UseMemoComp';
+import DocumentTitleComp from './CustomHooks/DocumentTitleComp';
+import CountWrapComp from './CustomHooks/CountWrapComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -120,7 +122,8 @@ function App() {
       {/* <GrandParentComp/> */}
       {/* <ParentCompOpt/> */}
       {/* <UseRefComp /> */}
-      <UseMemoComp />
+      {/* <DocumentTitleComp /> */}
+      <CountWrapComp />
     </div >
   );
 }
