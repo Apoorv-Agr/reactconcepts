@@ -43,6 +43,7 @@ import TimerComp from './FunctionalCompHooks/TimerComp';
 import GrandParentComp from './useContextHook/GrandParentComp';
 import ParentCompOpt from './OptimizationTech/UseCallBackHook/ParentCompOpt';
 import UseRefComp from './useRefHooks/UseRefComp';
+import UseMemoComp from './UseMemoHook/UseMemoComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -118,7 +119,8 @@ function App() {
       {/* <TimerComp /> */}
       {/* <GrandParentComp/> */}
       {/* <ParentCompOpt/> */}
-      <UseRefComp />
+      {/* <UseRefComp /> */}
+      <UseMemoComp />
     </div >
   );
 }
