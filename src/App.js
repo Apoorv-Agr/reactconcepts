@@ -46,6 +46,7 @@ import UseRefComp from './useRefHooks/UseRefComp';
 import UseMemoComp from './UseMemoHook/UseMemoComp';
 import DocumentTitleComp from './CustomHooks/DocumentTitleComp';
 import CountWrapComp from './CustomHooks/CountWrapComp';
+import InputWrapComp from './CustomHooks/InputWrapComp';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -123,7 +124,8 @@ function App() {
       {/* <ParentCompOpt/> */}
       {/* <UseRefComp /> */}
       {/* <DocumentTitleComp /> */}
-      <CountWrapComp />
+      {/* <CountWrapComp /> */}
+      <InputWrapComp />
     </div >
   );
 }
