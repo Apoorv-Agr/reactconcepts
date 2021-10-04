@@ -41,6 +41,7 @@ import HooksCleanUp from './FunctionalCompHooks/HooksCleanUp';
 import HooksCleanUpParentComp from './FunctionalCompHooks/HooksCleanUpParentComp';
 import TimerComp from './FunctionalCompHooks/TimerComp';
 import GrandParentComp from './useContextHook/GrandParentComp';
+import ParentCompOpt from './OptimizationTech/UseCallBackHook/ParentCompOpt';
 
 function App() {
   /* const [data, setData] = useState('John');
@@ -114,7 +115,8 @@ function App() {
       {/* <HooksCleanUp /> */}
       {/* <HooksCleanUpParentComp /> */}
       {/* <TimerComp /> */}
-      <GrandParentComp/>
+      {/* <GrandParentComp/> */}
+      <ParentCompOpt/>
     </div >
   );
 }
