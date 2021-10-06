@@ -87,7 +87,7 @@ function App() {
       {/* <ParentHocComp /> */}
       {/* <Form /> */}
       {/* <LifeCycleA /> */}
-      {/* <ClassLifeCycleMounting /> */}
+      <ClassLifeCycleMounting />
       {/* <ClassLifeCycleUpdating/> */}
       {/* <ErrorHandler>
         <ErrorGeneratingComponent number={4} />
@@ -125,7 +125,7 @@ function App() {
       {/* <UseRefComp /> */}
       {/* <DocumentTitleComp /> */}
       {/* <CountWrapComp /> */}
-      <InputWrapComp />
+     {/*  <InputWrapComp /> */}
     </div >
   );
 }

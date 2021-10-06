@@ -19,7 +19,7 @@ class ClassLifeCycleUpdating extends Component {
     };
   }
 
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(nextProps, prevState) {
     console.log("1st on update flow comes in getDerivedStateFromProps");
     return null;
   }
